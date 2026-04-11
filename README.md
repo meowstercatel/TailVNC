@@ -65,7 +65,7 @@ Inspired by [SockTail](https://github.com/Yeeb1/SockTail).
 
 ### Prerequisites
 
-- **Go** >= 1.25
+- **Go** >= 1.25.3
 - **GNU Make**
 - **UPX** (optional, for binary size reduction)
 - **Tailscale Auth Key** — generate from the Tailscale admin console; reusable + ephemeral keys are recommended for operational use
