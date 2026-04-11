@@ -129,3 +129,7 @@ Upon execution, the target host joins the configured Tailscale network as a new 
 ```
 <Tailscale IP>:5900
 ```
+
+![image-20260412003923140](assets/image-20260412003923140.png)
+
+![image-20260412004037568](assets/image-20260412004037568.png)
