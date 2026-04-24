@@ -75,7 +75,13 @@ type session struct {
 	clientBShift    uint8
 }
 
-func (s *session) addr() string { return s.conn.RemoteAddr().String() }
+func (s *session) addr() string {
+	addr := s.conn.RemoteAddr()
+	if addr == nil {
+		return "<disconnected>"
+	}
+	return addr.String()
+}
 
 // initClientPixelFormat sets the client pixel format to match the server's
 // declared ServerInit format. Called once before the handshake.
